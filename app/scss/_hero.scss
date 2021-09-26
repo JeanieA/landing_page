@@ -1,0 +1,47 @@
+.hero {
+
+  // .container {
+  //   @include breakpoint-up(large){
+  //     display: flex;
+  //     align-items: center;
+  //   }
+  // }
+
+  background-color: $primary-color;
+  background: rgba(255, 165, 0, 0.7);
+  padding-bottom: 70px;
+  
+  &__image {
+    position: relative; 
+    background-image: url('/images/burnfreeee.png');
+    background-size: 99%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    min-height: 15.5rem; 
+    margin-right: 1.25rem;
+
+    @include breakpoint-up(medium){
+      min-height: 25rem;
+      background-position: center 70%;
+      background-size: 80%;
+    }
+
+    @include breakpoint-up(large){
+      flex: 3;
+      order: 2;
+      height: 35rem;
+    }
+  }
+  
+  &__text {
+    text-align: start;
+    margin: 0 0.75rem 0 0.75rem;
+    
+
+    @include breakpoint-up(large){
+      font-size: $font-m;
+      flex: 2;
+      order: 1;
+    }
+  }
+}

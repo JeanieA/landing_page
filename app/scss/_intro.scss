@@ -1,0 +1,30 @@
+.intro { 
+   background-color: black;  
+   color: $grey-5;
+
+  &__image { 
+    background-image: url('/images/dancinggirl.jpg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 35rem; 
+
+    @include breakpoint-up(large){
+      flex: 2;
+      order: 2;
+      height: 35rem;
+    }
+  }
+
+  &__text {
+    text-align: start;
+    margin: 0 0.75rem 0 0.75rem;
+    color: $grey-3;
+
+    @include breakpoint-up(large){
+      font-size: $font-m;
+      flex: 2;
+      order: 3;
+    }
+  }
+}
