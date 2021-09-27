@@ -63,6 +63,11 @@ p {
   line-height: 1.15;
   // margin-bottom: 3rem;
   font-size: $font-s;
+
+  @include breakpoint-up(large) {
+    font-size: $font-m;
+    margin-bottom: 2.25rem;
+  }
 }
 
 a, 
@@ -79,7 +84,7 @@ a:hover {
   }
 
   max-width: 100rem;
-  margin: 0 auto;
+  // margin: 0 auto;
 
   &--pall {
     padding-top: 2.25rem;
@@ -109,6 +114,36 @@ a:hover {
   }
   &--pl {
     padding-left: 1.5rem;
+  }
+
+  &--mall {
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem; 
+    margin-right: 1.5rem;
+    margin-left: 1.5rem; 
+  }
+
+  &--my {
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem; 
+  }
+
+  &--mx {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem; 
+  }
+
+  &--mt {
+    margin-top: 2.25rem; 
+  }
+  &--mr {
+    margin-right: 1.5rem; 
+  }
+  &--mb {
+    margin-bottom: 2.25rem;  
+  }
+  &--ml {
+    margin-left: 1.5rem;
   }
 
 }
@@ -147,6 +182,7 @@ button,
   font-size: $font-m;
   transition: opacity 300ms ease-in-out;
   overflow: hidden;
+  margin: 1.5rem 0 1.5rem 0;
 
   &:hover {
     opacity: 0.75;

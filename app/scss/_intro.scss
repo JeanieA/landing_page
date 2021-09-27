@@ -1,15 +1,28 @@
 .intro { 
-   background-color: black;  
-   color: $grey-5;
+  position: relative;
+  width: calc(100% - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  // padding-bottom: 1.625rem;
+  border-radius: 5px;
+  background-color: $primary-color;  
+  color: $grey-5;
 
   &__image { 
-    background-image: url('/images/dancinggirl.jpg');
+    background-image: url('/images/sunglasses.jpg');
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 35rem; 
 
+    // @include breakpoint-up(medium){
+     
+    // }
+
     @include breakpoint-up(large){
+      background-position: center 5%;
       flex: 2;
       order: 2;
       height: 35rem;
@@ -18,11 +31,10 @@
 
   &__text {
     text-align: start;
-    margin: 0 0.75rem 0 0.75rem;
-    color: $grey-3;
+    color: $grey-1;
 
     @include breakpoint-up(large){
-      font-size: $font-m;
+      font-size: $font-xl;
       flex: 2;
       order: 3;
     }
