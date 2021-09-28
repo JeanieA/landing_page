@@ -1,6 +1,6 @@
 .footer { 
-  background-color: $grey-1;
-  color: $grey-5;
+  // background-color: $grey-1;
+  color: $grey-1;
   font-family: $navigation-font; 
   padding: 2.5rem; 
   text-align: center;
@@ -20,7 +20,7 @@
     }
 
     a {
-        color: $grey-5;
+        color: $grey-1;
     }
 
     &__logo { 
@@ -38,6 +38,9 @@
         // @include breakpoint-up(large){
         
         // }
+        i {
+          color: $grey-1;
+        }
         
         a {
           display: inline-block;

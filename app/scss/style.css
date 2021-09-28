@@ -94,6 +94,8 @@ body {
   font-weight: 300;
   color: #78716c;
   line-height: 1.3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffa502), color-stop(90%), to(white));
+  background: linear-gradient(to bottom, #ffa502, 90%, white);
 }
 
 @media (min-width: 64em) {
@@ -111,7 +113,7 @@ h2,
 h3 {
   font-family: "DM Serif Display", serif;
   margin-top: 0px;
-  color: #323435;
+  color: #212222;
   line-height: 1.15;
   font-weight: 400;
 }
@@ -390,9 +392,9 @@ button:hover,
 
 @media only screen and (max-width: 39em) {
   .hero .overlay {
-    background: -webkit-gradient(linear, left bottom, left top, from(#ffa502), to(transparent));
-    background: linear-gradient(to top, #ffa502, transparent);
-    min-height: 43.5rem;
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffa502), to(white));
+    background: linear-gradient(to top, #ffa502, white);
+    height: 47.5rem;
   }
   .hero__image {
     background-image: url("/images/burnfreeee.png");
@@ -430,8 +432,8 @@ button:hover,
 
 .hero__text {
   text-align: start;
-  margin: 5rem 0.75rem 0 0.75rem;
-  color: #323435;
+  margin: 0 0.75rem 0 0.75rem;
+  color: #212222;
 }
 
 @media (min-width: 64em) {
@@ -455,7 +457,7 @@ button:hover,
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 5px;
-  background-color: #ffa502;
+  background-color: #212222;
 }
 
 .intro__image {
@@ -481,7 +483,7 @@ button:hover,
 
 .intro__text {
   text-align: start;
-  color: #323435;
+  color: #f5f5f4;
 }
 
 @media (min-width: 64em) {
@@ -496,18 +498,31 @@ button:hover,
   }
 }
 
-.foote.support {
-  background-color: #ffa502;
-}
-
-.foote.support__text {
+.support__text {
   text-align: start;
   color: #f5f5f4;
 }
 
+.support__logo {
+  background-size: 110%;
+  background-position: center;
+  min-height: 5rem;
+}
+
+.support__logo .hu-logo {
+  background-image: url("/images/hi_logo.png");
+}
+
+.support__logo .esf-logo {
+  background-image: url("/images/esf-logo2.jpeg");
+}
+
+.support__logo .eu-logo {
+  background-image: url("/images/eu-logo2.jpeg");
+}
+
 .footer {
-  background-color: #323435;
-  color: #f5f5f4;
+  color: #212222;
   font-family: "Poiret One", cursive;
   padding: 2.5rem;
   text-align: center;
@@ -526,7 +541,7 @@ button:hover,
 }
 
 .footer a {
-  color: #f5f5f4;
+  color: #212222;
 }
 
 .footer__logo {
@@ -536,6 +551,10 @@ button:hover,
 
 .footer__social {
   margin-bottom: 1.875rem;
+}
+
+.footer__social i {
+  color: #212222;
 }
 
 .footer__social a {

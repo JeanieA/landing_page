@@ -1,12 +1,27 @@
-.foote.support {
-  background-color: $primary-color;
+.support {
+  // background-color: $grey-5;
   
   &__text {
     text-align: start;
     color: $grey-5;
   }  
 
-//   &__logo { 
-
-//   }
+  &__logo {
+    // position: absolute;
+    // width: 242.2px;
+    // height: 97.5px;
+    background-size: 110%;
+    background-position: center;
+    min-height: 5rem;
+    .hu-logo {
+      background-image: url('/images/hi_logo.png');
+    }
+    .esf-logo {
+      background-image: url('/images/esf-logo2.jpeg');
+    }
+    .eu-logo {
+      background-image: url('/images/eu-logo2.jpeg');
+    }
+    
+  }
 }
