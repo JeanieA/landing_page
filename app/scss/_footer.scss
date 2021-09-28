@@ -7,14 +7,16 @@
 
   
     @include breakpoint-up(large) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr) 2fr;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: 
-        'logo'
-        'social links copyright';
-    //   gap: 1rem;
-      justify-items: start;
+        display: flex;
+        flex-direction: row;
+    //   display: grid;
+    //   grid-template-columns: repeat(3, 1fr) 2fr;
+    //   grid-template-rows: repeat(2, 1fr);
+    //   grid-template-areas: 
+    //     'logo'
+    //     'social links copyright';
+    // //   gap: 1rem;
+    //   justify-items: start;
     }
 
     a {
@@ -25,24 +27,24 @@
         margin-bottom: 1.875rem;
         display: inline-block;
 
-        @include breakpoint-up(large){
-        grid-area: logo;
-        }
+        // @include breakpoint-up(large){
+        
+        // }
     }
 
     &__social { 
         margin-bottom: 1.875rem;
 
-        @include breakpoint-up(large){
-        grid-area: social;
-        }
+        // @include breakpoint-up(large){
+        
+        // }
         
         a {
-        display: inline-block;
+          display: inline-block;
         }
 
         a:not(:last-child) {
-        margin-right: 1rem;
+          margin-right: 1rem;
         } 
     }
 
@@ -53,17 +55,23 @@
         align-items: center;
         line-height: 2.25rem;
 
-        @include breakpoint-up(large){
-        grid-area: links;
+        @include breakpoint-up(medium){
+          display: flex;
+          flex-direction: row;
+          font-size: $font-s;
         }
+
+        // @include breakpoint-up(large){
+        
+        // }
     }
 
     &__copyright {
         font-family: $headers-font; 
 
-        @include breakpoint-up(large){
-            grid-area: copyright;
-        }
+        // @include breakpoint-up(large){
+        
+        // }
     }
 
 }

@@ -40,7 +40,7 @@ h3 {
 
 h1 { 
   font-size: $font-l;
-  padding-top: 8.25rem;
+  padding-top: 4rem;
   margin-bottom: 1rem;
 
   @include breakpoint-up(large) {
@@ -158,6 +158,10 @@ a:hover {
 
   &-jc-c {
     justify-content: center;
+  }
+
+  &-ai-fs {
+    align-items: flex-start;
   }
 
   &-ai-c {
