@@ -1,5 +1,27 @@
 .hero {
- 
+  overflow: hidden;
+  // object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  
+  
+  &__text {
+    text-align: center;
+    margin: 0 0.75rem 0 0.75rem;
+    color: white;
+    z-index: 5;
+    position: relative;
+    
+    @include breakpoint-up(large){
+      // font-size: $font-xl;
+      // flex: 2;
+      // order: 2;
+      position: relative;
+      margin-top: 10rem;
+    }
+  }
+
+
   @media only screen and (max-width: 39em){
     .overlay {
       background: linear-gradient(to top, $primary-color, white);
@@ -14,12 +36,13 @@
           position: absolute;
           width: 100%;
           height: 100%;
+         
         }
       }
     
     @include breakpoint-up(medium){
       background-image: url('/images/burn.jpg'); 
-      min-height: 25rem;
+      min-height: 50rem;
       background-repeat: no-repeat;
       background-position: center 70%;
       background-size: 100%;
@@ -28,20 +51,11 @@
     @include breakpoint-up(large){
       background-image: url('/images/burn.jpg');
       background-repeat: no-repeat;
-      flex: 3;
-      order: 2;
-      height: 35rem;
+      background-position: top;
+      filter: brightness(.7);
+      // flex: 3;
+      // order: 2;
+      
     }
     
-    &__text {
-    text-align: start;
-    margin: 0 0.75rem 0 0.75rem;
-    color: $grey-1;
-
-    @include breakpoint-up(large){
-      font-size: $font-m;
-      flex: 2;
-      order: 1;
-    }
-  }
 }

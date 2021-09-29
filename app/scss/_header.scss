@@ -28,13 +28,22 @@
     background-image: linear-gradient($secondary-color, transparent);
   }
 
-  nav {
-    position: relative;
-    background-color: white;
-    padding-top: 1.0625rem; 
-    padding-bottom: 1.0625rem ;     
-  }
+  nav,
+  #navbar {
+    overflow: hidden;
+    background-color: transparent;
+  // }
 
+  &.sticky {
+    background-color: white;
+    transition: background-color 0.5s ease;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+}
+  
 //   &__logo {
 
 //     img {

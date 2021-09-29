@@ -8,19 +8,29 @@
 
   &__logo {
     // position: absolute;
-    // width: 242.2px;
-    // height: 97.5px;
-    background-size: 110%;
-    background-position: center;
-    min-height: 5rem;
+    width: 242.2px;
+    height: 97.5px;
+
     .hu-logo {
       background-image: url('/images/hi_logo.png');
+      background-size: 40%;
+      background-repeat: no-repeat;
+      // background-position: center;
+      min-height: 3rem;
     }
     .esf-logo {
       background-image: url('/images/esf-logo2.jpeg');
+      background-size: 40%;
+      background-repeat: no-repeat;
+      // background-position: center;
+      min-height: 3rem;
     }
     .eu-logo {
       background-image: url('/images/eu-logo2.jpeg');
+      background-size: 40%;
+      background-repeat: no-repeat;
+      // background-position: center;
+      min-height: 3rem;
     }
     
   }

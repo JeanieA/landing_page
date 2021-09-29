@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link href="https/:/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet"> -->
+    <link href="./Quouch Landing Page_files/css2" rel="stylesheet">
+    <link href="./Quouch Landing Page_files/css2(1)" rel="stylesheet">
+    <link rel="stylesheet" href="./Quouch Landing Page_files/style.css">
+
+    <title>Quouch Landing Page</title>
+
+</head>
+<body cz-shortcut-listen="true">
+  <header class="header">
+    <div class="overlay has-fade"></div>
+
+    <nav id="navbar" class="container--px flex flex-jc-sb flex-ai-c sticky"> 
+      <a href="http://127.0.0.1:5500/" class="header__logo">
+        <img src="./Quouch Landing Page_files/logo.svg" alt="Quouch">
+      </a>
+      
+      <a id="btnHamburger" href="http://127.0.0.1:5500/index.html#" class="header__toggle hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      
+      <div class="header__links hide-for-mobile">
+        <a href="http://127.0.0.1:5500/index.html#">Home</a><a href="http://127.0.0.1:5500/pages/vision.html">Vision</a><a href="http://127.0.0.1:5500/pages/team.html">Team</a>
+      </div>
+
+      <button type="button" class="button hide-for-mobile">contact us</button>
+    </nav>
+
+    <div class="header__menu has-fade">
+      <a href="http://127.0.0.1:5500/index.html#">Home</a><a href="http://127.0.0.1:5500/pages/vision.html">Vision</a><a href="http://127.0.0.1:5500/pages/team.html">Team</a>
+    </div>
+
+  </header>
+  
+  <section class="hero">
+    <div class="overlay">
+      <!-- <div class="container-pall">
+      </div> -->
+      <div class="hero__text container--px">
+        <h1>
+          A New Way of Travelling
+        </h1>
+        <p>
+          From a female &amp; queer perspective, open to everyone.
+          Meet inspiring people around the world to work together and play together.
+          Connect to create businesses, art, projects and technology.
+          Or just travel for fun.
+        </p>
+        <button type="button" class="button">Let's Go!</button>
+      </div>
+      <div class="hero__image">
+      </div>
+        <!-- <img src="images/burnfreeee.png" alt="burningcouch" /> -->
+        
+    
+
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="container">
+      <div class="intro__text container--pall">
+        <p>
+          Isn't it crazy that the decision whether we trust a person or not is still mainly based on reviews?
+          If a user has not many reviews or none at all, we are not likely to trust her or him. 
+          Isn't there a better way of getting a clearer idea of who is sitting behind the screen?
+        </p>
+        <button type="button" class="button">Read more</button>
+      </div>
+      <div class="intro__image">
+      </div>
+    </div>
+  </section>
+
+  <section class="support">
+    <div class="container--pall">
+      <div class="support__text">
+        <h3>Supported by</h3>
+      </div>
+      <div class="support__logo">
+        <div class="hu-logo"></div>
+        <div class="esf-logo"></div>
+        <div class="eu-logo"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+
+    <a class="footer__logo" href="http://127.0.0.1:5500/index.html#">
+      <img src="http://127.0.0.1:5500/index.html" alt="Quouch">
+    </a>
+
+    <div class="footer__social">
+      <i class="fab fa-facebook">facebook</i>
+      <i class="fab fa-instagram">instagram</i>
+      <i class="fab fa-youtube">youtube</i>     
+    </div>
+
+    <div class="footer__links">
+      <a href="http://127.0.0.1:5500/index.html#">About Us</a>
+      <a href="http://127.0.0.1:5500/index.html#">Contact</a>
+      <a href="http://127.0.0.1:5500/index.html#">Support</a>
+      <a href="http://127.0.0.1:5500/index.html#">Impressum &amp; Datenschutz</a>
+    </div>
+
+    <div class="footer__copyright">
+      © quouch. All Rights Reserved.
+    </div>
+
+    </div>
+  </footer>
+  
+  <script src="./Quouch Landing Page_files/script.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
