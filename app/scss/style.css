@@ -93,9 +93,8 @@ body {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.3;
-  background-color: #212222;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffa502), color-stop(90%), to(white));
-  background: linear-gradient(to bottom, #ffa502, 90%, white);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(30%, #ffa502), color-stop(90%), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(rgba(0, 0, 0, 0), #ffa502 30%, 90%, rgba(0, 0, 0, 0));
 }
 
 @media (min-width: 64em) {
@@ -287,7 +286,7 @@ button,
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
   overflow: hidden;
-  margin: 1.5rem 0 1.5rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 button:hover,
@@ -304,6 +303,12 @@ button:hover,
 @media (min-width: 64em) {
   .hide-for-desktop {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 39em) {
+  .header {
+    height: 45rem;
   }
 }
 
@@ -336,11 +341,12 @@ button:hover,
 .header #navbar {
   overflow: hidden;
   background-color: transparent;
+  z-index: 10;
 }
 
 .header nav.sticky,
 .header #navbar.sticky {
-  background-color: white;
+  background-color: linear-gradient(#e16415, transparent);
   -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
   position: -webkit-sticky;
@@ -399,60 +405,53 @@ button:hover,
   color: #6a3872;
 }
 
-.hero {
+.hero__image {
   overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-}
-
-.hero__text {
-  text-align: center;
-  margin: 0 0.75rem 0 0.75rem;
-  color: white;
-  z-index: 5;
   position: relative;
-}
-
-@media (min-width: 64em) {
-  .hero__text {
-    position: relative;
-    margin-top: 10rem;
-  }
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-image: url("/images/burnfreeee.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 39em) {
-  .hero .overlay {
-    background: -webkit-gradient(linear, left bottom, left top, from(#ffa502), to(white));
-    background: linear-gradient(to top, #ffa502, white);
-    height: 47.5rem;
-  }
   .hero__image {
-    background-image: url("/images/burnfreeee.png");
-    background-size: 95%;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    margin-top: 8rem;
+  }
+  .hero__image p {
+    padding: 0 2rem 0 2rem;
   }
 }
 
 @media (min-width: 40em) {
-  .hero {
-    background-image: url("/images/burn.jpg");
-    min-height: 50rem;
-    background-repeat: no-repeat;
-    background-position: center 70%;
-    background-size: 100%;
+  .hero__image {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("/images/burn2.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("/images/burn2.png");
   }
 }
 
 @media (min-width: 64em) {
-  .hero {
-    background-image: url("/images/burn.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    -webkit-filter: brightness(0.7);
-            filter: brightness(0.7);
+  .hero__image {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/burn2.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/burn2.png");
+    position: relative;
+    height: 59.1rem;
+  }
+}
+
+.hero__text {
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 64em) {
+  .hero__text {
+    margin-top: 8rem;
+    padding: 0 20rem 0 20rem;
+  }
+  .hero__text p {
+    font-size: 21px;
   }
 }
 
@@ -506,6 +505,10 @@ button:hover,
   }
 }
 
+.support {
+  position: relative;
+}
+
 .support__text {
   text-align: start;
   color: #f5f5f4;
@@ -542,6 +545,7 @@ button:hover,
   font-family: "Poiret One", cursive;
   padding: 2.5rem;
   text-align: center;
+  position: relative;
 }
 
 @media (min-width: 64em) {

@@ -1,61 +1,49 @@
 .hero {
-  overflow: hidden;
-  // object-fit: cover;
-  width: 100vw;
-  height: 100vh;
   
-  
-  &__text {
-    text-align: center;
-    margin: 0 0.75rem 0 0.75rem;
-    color: white;
-    z-index: 5;
+  &__image {
+    overflow: hidden;
     position: relative;
+    object-fit: contain;
+    background-image: url('/images/burnfreeee.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // background-position: center;
+    
+    @media only screen and (max-width: 39em) {
+  
+      margin-top: 8rem;
+      p {
+        padding: 0 2rem 0 2rem;
+      }
+    }
+    
+    @include breakpoint-up(medium){
+      background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('/images/burn2.png');
+      
+      // background-image: url('/images/burn.jpg'); 
+      // min-height: 50rem;
+      // background-repeat: no-repeat;
+    }
     
     @include breakpoint-up(large){
-      // font-size: $font-xl;
-      // flex: 2;
-      // order: 2;
+      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/burn2.png');
+      // background-size: 100%;
       position: relative;
-      margin-top: 10rem;
+      height: 59.1rem;
     }
   }
 
+  &__text {
+    text-align: center;
+    color: white;
 
-  @media only screen and (max-width: 39em){
-    .overlay {
-      background: linear-gradient(to top, $primary-color, white);
-      height: 47.5rem; 
-    }
-    
-      &__image {
-        background-image: url('/images/burnfreeee.png');
-        background-size: 95%;
-        background-repeat: no-repeat;
-        // background-position: 10% 200%;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-         
-        }
-      }
-    
-    @include breakpoint-up(medium){
-      background-image: url('/images/burn.jpg'); 
-      min-height: 50rem;
-      background-repeat: no-repeat;
-      background-position: center 70%;
-      background-size: 100%;
-    }
-    
+
     @include breakpoint-up(large){
-      background-image: url('/images/burn.jpg');
-      background-repeat: no-repeat;
-      background-position: top;
-      filter: brightness(.7);
-      // flex: 3;
-      // order: 2;
-      
+      p {
+        font-size: 21px;
+      }
+      margin-top: 8rem;
+      padding: 0 20rem 0 20rem;
     }
-    
+  }
 }

@@ -4,6 +4,7 @@
   font-family: $navigation-font; 
   padding: 2.5rem; 
   text-align: center;
+  position: relative;
 
   
     @include breakpoint-up(large) {
