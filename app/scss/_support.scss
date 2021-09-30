@@ -1,6 +1,7 @@
 .support {
   // background-color: $grey-5;
   position: relative;
+
   
   &__text {
     text-align: start;
@@ -8,9 +9,9 @@
   }  
 
   &__logo {
-    // position: absolute;
+    position: relative;
     width: 242.2px;
-    height: 97.5px;
+    height: 97.5px; 
 
     .hu-logo {
       background-image: url('/images/hi_logo.png');

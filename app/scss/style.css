@@ -306,10 +306,9 @@ button:hover,
   }
 }
 
-@media only screen and (max-width: 39em) {
-  .header {
-    height: 45rem;
-  }
+.header {
+  position: relative;
+  z-index: 1;
 }
 
 .header.open .header__toggle > span:first-child {
@@ -417,7 +416,7 @@ button:hover,
 
 @media only screen and (max-width: 39em) {
   .hero__image {
-    margin-top: 8rem;
+    margin-top: 7rem;
   }
   .hero__image p {
     padding: 0 2rem 0 2rem;
@@ -443,6 +442,7 @@ button:hover,
 .hero__text {
   text-align: center;
   color: white;
+  margin-top: 2rem;
 }
 
 @media (min-width: 64em) {
@@ -515,6 +515,7 @@ button:hover,
 }
 
 .support__logo {
+  position: relative;
   width: 242.2px;
   height: 97.5px;
 }

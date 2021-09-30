@@ -80,6 +80,7 @@ a:hover {
 
 // Spacing 
 .container {
+
   @include breakpoint-up(large){
     display: flex;
     align-items: center;
