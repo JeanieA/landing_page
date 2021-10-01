@@ -119,35 +119,35 @@ a:hover {
     padding-left: 1.5rem;
   }
 
-  &--mall {
-    margin-top: 2.25rem;
-    margin-bottom: 2.25rem; 
-    margin-right: 1.5rem;
-    margin-left: 1.5rem; 
-  }
+  // &--mall {
+  //   margin-top: 2.25rem;
+  //   margin-bottom: 2.25rem; 
+  //   margin-right: 1.5rem;
+  //   margin-left: 1.5rem; 
+  // }
 
-  &--my {
-    margin-top: 2.25rem;
-    margin-bottom: 2.25rem; 
-  }
+  // &--my {
+  //   margin-top: 2.25rem;
+  //   margin-bottom: 2.25rem; 
+  // }
 
-  &--mx {
-    margin-right: 1.5rem;
-    margin-left: 1.5rem; 
-  }
+  // &--mx {
+  //   margin-right: 1.5rem;
+  //   margin-left: 1.5rem; 
+  // }
 
-  &--mt {
-    margin-top: 2.25rem; 
-  }
-  &--mr {
-    margin-right: 1.5rem; 
-  }
-  &--mb {
-    margin-bottom: 2.25rem;  
-  }
-  &--ml {
-    margin-left: 1.5rem;
-  }
+  // &--mt {
+  //   margin-top: 2.25rem; 
+  // }
+  // &--mr {
+  //   margin-right: 1.5rem; 
+  // }
+  // &--mb {
+  //   margin-bottom: 2.25rem;  
+  // }
+  // &--ml {
+  //   margin-left: 1.5rem;
+  // }
 
 }
 
@@ -177,20 +177,21 @@ button,
 .button {
   position: relative;
   display: inline-block;
-  padding: 0.875rem 2.1875rem;
-  // background-image: linear-gradient(to right, $primary-color, $secondary-color);
-  background-color: $purple;
+  padding: 1.125rem 2.5rem;
+  // background-image: linear-gradient(to right, $purple, rgba(123, 48, 134, 0.5));
+  background-color: $grey-3;
   border: 0;
   border-radius: 37px;
   cursor: pointer;
-  color: $grey-5;
+  color: $purple;
   font-family: $headers-font;
-  font-weight: 600;
-  font-size: $font-m;
-  transition: opacity 300ms ease-in-out;
+  font-weight: 900;
+  // font-size: $font-m;
   overflow: hidden;
   margin: 1rem 0 1rem 0;
-
+  box-shadow: 4px 5px $grey-1;
+  transition: opacity 300ms ease-in-out;
+  
   &:hover {
     opacity: 0.75;
   }

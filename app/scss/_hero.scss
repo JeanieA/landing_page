@@ -18,31 +18,46 @@
     }
     
     @include breakpoint-up(medium){
-      background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('/images/burn2.png');
-      
+      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/burn2.png');
+      // position: relative;
       // background-image: url('/images/burn.jpg'); 
-      // min-height: 50rem;
+      min-height: 42.3rem;
       // background-repeat: no-repeat;
     }
-    
+
     @include breakpoint-up(large){
       background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/burn2.png');
       // background-size: 100%;
       position: relative;
-      height: 59.1rem;
+      min-height: 46rem;
+    }
+    
+    @include breakpoint-up(xlarge){
+      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/burn2.png');
+      // background-size: 100%;
+      position: relative;
+      min-height: 75.7rem;
     }
   }
   
   &__text {
     text-align: center;
-    color: white;
+    color: $grey-3;
     margin-top: 2rem;
     
-    @include breakpoint-up(large) {
-      margin-top: 8rem;
+    @include breakpoint-up(xlarge) {
+      margin-top: 5rem;
       padding: 0 20rem 0 20rem;
+
+      h1 {
+        font-size: 65px;
+      }
       p {
-        font-size: 21px;
+        font-size: 26px;
+        margin-bottom: 6rem;
+      }
+      button {
+        font-size: $font-m;
       }
     }
   }

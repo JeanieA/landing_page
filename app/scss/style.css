@@ -207,39 +207,6 @@ a:hover {
   padding-left: 1.5rem;
 }
 
-.container--mall {
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
-}
-
-.container--my {
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-}
-
-.container--mx {
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
-}
-
-.container--mt {
-  margin-top: 2.25rem;
-}
-
-.container--mr {
-  margin-right: 1.5rem;
-}
-
-.container--mb {
-  margin-bottom: 2.25rem;
-}
-
-.container--ml {
-  margin-left: 1.5rem;
-}
-
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,19 +241,20 @@ button,
 .button  {
   position: relative;
   display: inline-block;
-  padding: 0.875rem 2.1875rem;
-  background-color: #6a3872;
+  padding: 1.125rem 2.5rem;
+  background-color: #d6d3d1;
   border: 0;
   border-radius: 37px;
   cursor: pointer;
-  color: #f5f5f4;
+  color: #7b3086;
   font-family: "DM Serif Display", serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
+  font-weight: 900;
   overflow: hidden;
   margin: 1rem 0 1rem 0;
+  -webkit-box-shadow: 4px 5px #212222;
+          box-shadow: 4px 5px #212222;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 
 button:hover,
@@ -401,7 +369,7 @@ button:hover,
 }
 
 .header__links a:hover {
-  color: #6a3872;
+  color: #7b3086;
 }
 
 .hero__image {
@@ -425,8 +393,9 @@ button:hover,
 
 @media (min-width: 40em) {
   .hero__image {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("/images/burn2.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("/images/burn2.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/burn2.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/burn2.png");
+    min-height: 42.3rem;
   }
 }
 
@@ -435,23 +404,39 @@ button:hover,
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/burn2.png");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/burn2.png");
     position: relative;
-    height: 59.1rem;
+    min-height: 46rem;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .hero__image {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/burn2.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/burn2.png");
+    position: relative;
+    min-height: 75.7rem;
   }
 }
 
 .hero__text {
   text-align: center;
-  color: white;
+  color: #d6d3d1;
   margin-top: 2rem;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 87.5em) {
   .hero__text {
-    margin-top: 8rem;
+    margin-top: 5rem;
     padding: 0 20rem 0 20rem;
   }
+  .hero__text h1 {
+    font-size: 65px;
+  }
   .hero__text p {
-    font-size: 21px;
+    font-size: 26px;
+    margin-bottom: 6rem;
+  }
+  .hero__text button {
+    font-size: 1.5rem;
   }
 }
 
