@@ -23,6 +23,14 @@
      
     // }
 
+    @include breakpoint-up(medium){
+      
+      background-position: center 13%;
+      flex: 2;
+      order: 2;
+      height: 35rem;
+    }
+
     @include breakpoint-up(large){
       background-position: center 5%;
       flex: 2;
@@ -36,11 +44,15 @@
     color: $grey-5;
 
     @include breakpoint-up(medium){
-      font-size: $font-m;
+      
+      padding: 3rem;
       // flex: 2;
       // order: 3;
+      p {
+        font-size: $font-m;
+      }
       button {
-        font-size: $font-s;
+        font-size: $font-m;
       }
     }
 

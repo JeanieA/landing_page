@@ -1,6 +1,5 @@
 .hero {
-    
-    &__image {
+  &__image {
     overflow: hidden;
     position: relative;
     object-fit: contain;
@@ -10,7 +9,7 @@
     // background-position: center;
     
     @media only screen and (max-width: 39em) {
-  
+      
       margin-top: 7rem;
       p {
         padding: 0 2rem 0 2rem;
@@ -18,25 +17,30 @@
     }
     
     @include breakpoint-up(medium){
-      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/burn2.png');
+      background-image: url('/images/burn2.png');
       // position: relative;
-      // background-image: url('/images/burn.jpg'); 
-      min-height: 42.3rem;
+      min-height: 35rem;
       // background-repeat: no-repeat;
     }
 
     @include breakpoint-up(large){
-      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/burn2.png');
-      // background-size: 100%;
-      position: relative;
-      min-height: 46rem;
+      background-image: url('/images/burn2.png');
+      // position: relative;
+      min-height: 60rem;
+      // width: 100%;
+      // height: auto;
+      
     }
     
     @include breakpoint-up(xlarge){
-      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/burn2.png');
-      // background-size: 100%;
-      position: relative;
+      background-image: url('/images/burn2.png');
+      // position: relative;
       min-height: 75.7rem;
+      // width: 100%;
+      // height: auto;
+      
+
+    
     }
   }
   
@@ -50,14 +54,14 @@
       // padding: 0 20rem 0 20rem;
 
       h1 {
-        font-size: 40px;
+        font-size: 46px;
       }
       p {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 2rem;
       }
       button {
-        font-size: 17px;
+        font-size: 18px;
       }
     }
 
@@ -93,6 +97,10 @@
       }
     }
   }
+}
+
+.quote {
+  text-align: center;
 }
 
 // .wrapper {

@@ -51,11 +51,12 @@ h1 {
 }
 
 h2 {
-  font-size: $font-m;
+  font-size: $font-l;
+  margin-top: 3rem;
   margin-bottom: 1.5625rem;
 
   @include breakpoint-up(large) {
-    font-size: $font-l;
+    font-size: $font-xl;
     margin-bottom: 2.25rem;
   }
 }

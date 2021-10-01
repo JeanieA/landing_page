@@ -129,13 +129,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  margin-top: 3rem;
   margin-bottom: 1.5625rem;
 }
 
 @media (min-width: 64em) {
   h2 {
-    font-size: 2.5rem;
+    font-size: 3.25rem;
     margin-bottom: 2.25rem;
   }
 }
@@ -393,26 +394,21 @@ button:hover,
 
 @media (min-width: 40em) {
   .hero__image {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/burn2.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/burn2.png");
-    min-height: 42.3rem;
+    background-image: url("/images/burn2.png");
+    min-height: 35rem;
   }
 }
 
 @media (min-width: 64em) {
   .hero__image {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/burn2.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/burn2.png");
-    position: relative;
-    min-height: 46rem;
+    background-image: url("/images/burn2.png");
+    min-height: 60rem;
   }
 }
 
 @media (min-width: 87.5em) {
   .hero__image {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/burn2.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/burn2.png");
-    position: relative;
+    background-image: url("/images/burn2.png");
     min-height: 75.7rem;
   }
 }
@@ -424,14 +420,14 @@ button:hover,
 
 @media (min-width: 40em) {
   .hero__text h1 {
-    font-size: 40px;
+    font-size: 46px;
   }
   .hero__text p {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 2rem;
   }
   .hero__text button {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
@@ -468,6 +464,10 @@ button:hover,
   }
 }
 
+.quote {
+  text-align: center;
+}
+
 .intro {
   position: relative;
   width: calc(100% - 3rem);
@@ -487,6 +487,19 @@ button:hover,
   background-repeat: no-repeat;
   background-position: center;
   min-height: 35rem;
+}
+
+@media (min-width: 40em) {
+  .intro__image {
+    background-position: center 13%;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 35rem;
+  }
 }
 
 @media (min-width: 64em) {
@@ -509,10 +522,13 @@ button:hover,
 
 @media (min-width: 40em) {
   .intro__text {
+    padding: 3rem;
+  }
+  .intro__text p {
     font-size: 1.5rem;
   }
   .intro__text button {
-    font-size: 0.875rem;
+    font-size: 1.5rem;
   }
 }
 
