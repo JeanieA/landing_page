@@ -3,6 +3,10 @@
   max-width: 100%;
   max-height: 100%;
   padding-right: 1rem;
+
+  @include breakpoint-up(medium){
+    padding-right: 2.8rem;
+  }
 }
 
 .hero {
@@ -14,10 +18,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     
-    @include breakpoint-up(medium){
-      background-image: url('/images/burn2.png');
-      min-height: 35rem;
-    }
+    // @include breakpoint-up(medium){
+    //   background-image: url('/images/burn2.png');
+    //   min-height: 35rem;
+    // }
     
     @include breakpoint-up(large){
       background-image: url('/images/burn2.png');
@@ -42,13 +46,14 @@
         padding: 0 2.8rem;
       }
       p {
+
         padding: 0 2rem 0 2rem;
       }
     }
   
     @include breakpoint-up(medium) {
-      margin-top: 3.5rem;
-      // padding: 0 20rem 0 20rem;
+      margin-top: 8rem;
+      color: $grey-1;
 
       h1 {
         font-size: 46px;
@@ -64,6 +69,7 @@
 
     @include breakpoint-up(large) {
       margin-top: 7rem;
+      color: $grey-4;
 
       h1 {
         font-size: 50px;
