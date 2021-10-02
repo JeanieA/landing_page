@@ -9,37 +9,24 @@
 
 
   &__image {
-    overflow: hidden;
     position: relative;
     object-fit: contain;
     background-repeat: no-repeat;
+    background-size: cover;
     
     @include breakpoint-up(medium){
       background-image: url('/images/burn2.png');
-      background-size: contain;
-      // position: relative;
-      min-height: 45rem;
-      // background-repeat: no-repeat;
-      
-  
+      min-height: 35rem;
     }
     
     @include breakpoint-up(large){
       background-image: url('/images/burn2.png');
-      background-size: cover;
-      
-      // position: relative;
-      // min-height: 60rem;
-      width: 100%;
-      height: auto;
+      min-height: 50rem;
     }
     
     @include breakpoint-up(xlarge){
       background-image: url('/images/burn2.png');
-      // position: relative;
-      min-height: 75.7rem;
-      // width: 100%;
-      // height: auto;
+      min-height: 74rem;
     }
   }
   
@@ -60,7 +47,7 @@
     }
   
     @include breakpoint-up(medium) {
-      // margin-top: 2rem;
+      margin-top: 3.5rem;
       // padding: 0 20rem 0 20rem;
 
       h1 {
@@ -76,8 +63,7 @@
     }
 
     @include breakpoint-up(large) {
-      margin-top: 2rem;
-      // padding: 0 20rem 0 20rem;
+      margin-top: 7rem;
 
       h1 {
         font-size: 50px;
@@ -93,7 +79,7 @@
     
     @include breakpoint-up(xlarge) {
       margin-top: 5rem;
-      padding: 0 20rem 0 20rem;
+      // padding: 0 20rem 0 20rem;
 
       h1 {
         font-size: 65px;
