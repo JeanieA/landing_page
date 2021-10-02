@@ -1,6 +1,6 @@
 .header {
   position: relative;
-
+  
   // Hamburger Open Styles
   &.open {
 
@@ -43,8 +43,6 @@
     top: 0;
     width: 100%;
   }
-
-  
 }
   
   &__toggle { // Mobile Menu
