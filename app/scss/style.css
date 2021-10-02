@@ -653,10 +653,14 @@ button:hover,
      object-fit: contain;
 }
 
-.footer {
+.footer .container {
   color: #212222;
   font-family: "Poiret One", cursive;
   padding: 4.25rem 1.5rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 3rem;
 }
 
 @media only screen and (max-width: 39em) {
@@ -665,22 +669,34 @@ button:hover,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
-.footer a {
+@media (min-width: 40em) {
+  .footer .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.footer .container a {
   color: #212222;
 }
 
-.footer__logo {
+.footer .container__logo {
   margin-bottom: 1.875rem;
   font-size: 0.875rem;
 }
 
-.footer__social {
+.footer .container__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -690,18 +706,21 @@ button:hover,
           flex-direction: row;
   margin-bottom: 1.2rem;
   line-height: 1.25rem;
-  gap: 1.6rem;
 }
 
-.footer__social i {
-  color: #212222;
+@media (min-width: 40em) {
+  .footer .container__social {
+    gap: .9rem;
+  }
 }
 
-.footer__social a:not(:last-child) {
-  margin-right: 1rem;
+@media (min-width: 64em) {
+  .footer .container__social {
+    gap: 2rem;
+  }
 }
 
-.footer__links {
+.footer .container__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,7 +734,7 @@ button:hover,
 }
 
 @media (min-width: 40em) {
-  .footer__links {
+  .footer .container__links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -723,17 +742,17 @@ button:hover,
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    font-size: 0.875rem;
+    font-size: 18px;
   }
 }
 
-.footer__copyright {
+.footer .container__copyright {
   font-family: "DM Serif Display", serif;
   color: #78716c;
 }
 
 @media only screen and (max-width: 39em) {
-  .footer__copyright {
+  .footer .container__copyright {
     font-size: 8px;
   }
 }

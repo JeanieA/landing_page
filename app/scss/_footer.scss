@@ -1,31 +1,23 @@
-
-.footer { 
+.footer .container { 
   color: $grey-1;
   font-family: $navigation-font; 
   padding: 4.25rem 1.5rem 1rem; 
-  // text-align: center;
-  // position: relative;
-  
-  
-  .container {
+  align-items: center;
+  line-height: 3rem;
+
     @media only screen and (max-width: 39em) {
       flex-direction: column;
-      align-items: center;
     }
-  }
+
+    @include breakpoint-up(medium){
+      flex-wrap: wrap;  
+    }
+    
+    @include breakpoint-up(large){
+      flex-wrap: wrap;  
+      gap: 1rem;
+    }
   
-    // @include breakpoint-up(large) {
-    //     display: flex;
-    //     flex-direction: row;
-    // //   display: grid;
-    // //   grid-template-columns: repeat(3, 1fr) 2fr;
-    // //   grid-template-rows: repeat(2, 1fr);
-    // //   grid-template-areas: 
-    // //     'logo'
-    // //     'social links copyright';
-    // // //   gap: 1rem;
-    // //   justify-items: start;
-    // }
 
     a {
         color: $grey-1;
@@ -34,12 +26,6 @@
     &__logo { 
         margin-bottom: 1.875rem;
         font-size: $font-s;
-        // font-family: $navigation-font;
-
-
-        // @include breakpoint-up(large){
-        
-        // }
     }
 
     &__social { 
@@ -47,19 +33,23 @@
         flex-direction: row;
         margin-bottom: 1.2rem;
         line-height: 1.25rem;
-        gap: 1.6rem;
-
-        // @include breakpoint-up(large){
+        // gap: .6rem;
         
-        // }
-
-        i {
-          color: $grey-1;
+        @include breakpoint-up(medium){
+          gap: .9rem;
         }
 
-        a:not(:last-child) {
-          margin-right: 1rem;
-        } 
+        @include breakpoint-up(large){
+          gap: 2rem;
+          //  .fab {
+          //   size: .875em;
+          //  }
+          
+        }
+
+        // a:not(:last-child) {
+        //   margin-right: 1rem;
+        // } 
     }
 
     &__links { 
@@ -68,23 +58,15 @@
         margin-bottom: .4rem;
         line-height: 1.25rem;
         gap: 1.875rem;
-        
-        // @media only screen and (max-width: 39em) {
-        //   a {
-            
-        //     align-items: start;
-        //     justify-content: space-between;
-        //   }
-        // }
 
         @include breakpoint-up(medium){
           display: flex;
           flex-direction: row;
-          font-size: $font-s;
+          font-size: 18px;
         }
 
         // @include breakpoint-up(large){
-        
+          
         // }
     }
 
@@ -97,7 +79,7 @@
         }
 
         // @include breakpoint-up(large){
-        
+        //   padding-top: 2rem;
         // }
     }
 
