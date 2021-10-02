@@ -1,35 +1,37 @@
+#mobilepic {
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  padding-right: 1rem;
+}
+
 .hero {
+
+
   &__image {
     overflow: hidden;
     position: relative;
     object-fit: contain;
-    background-image: url('/images/burnfreeee.png');
-    background-size: 100%;
     background-repeat: no-repeat;
-    // background-position: center;
-    
-    @media only screen and (max-width: 39em) {
-      
-      margin-top: 7rem;
-      p {
-        padding: 0 2rem 0 2rem;
-      }
-    }
     
     @include breakpoint-up(medium){
       background-image: url('/images/burn2.png');
+      background-size: contain;
       // position: relative;
-      min-height: 35rem;
+      min-height: 45rem;
       // background-repeat: no-repeat;
+      
+  
     }
-
+    
     @include breakpoint-up(large){
       background-image: url('/images/burn2.png');
-      // position: relative;
-      min-height: 60rem;
-      // width: 100%;
-      // height: auto;
+      background-size: cover;
       
+      // position: relative;
+      // min-height: 60rem;
+      width: 100%;
+      height: auto;
     }
     
     @include breakpoint-up(xlarge){
@@ -38,17 +40,25 @@
       min-height: 75.7rem;
       // width: 100%;
       // height: auto;
-      
-
-    
     }
   }
   
   &__text {
     text-align: center;
     color: $grey-5;
-    // margin-top: 2rem;
 
+    @media only screen and (max-width: 39em) {      
+      margin-top: 5rem;
+      color: $grey-1;
+
+      h1 {
+        padding: 0 2.8rem;
+      }
+      p {
+        padding: 0 2rem 0 2rem;
+      }
+    }
+  
     @include breakpoint-up(medium) {
       // margin-top: 2rem;
       // padding: 0 20rem 0 20rem;
@@ -99,12 +109,6 @@
   }
 }
 
-.quote {
-  text-align: center;
-}
-
-// .wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
+// .quote {
+//   text-align: center;
 // }

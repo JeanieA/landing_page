@@ -1,11 +1,5 @@
 .header {
   position: relative;
-  z-index: 1;
-  
-  // @media only screen and (max-width: 39em) {
-  //   height: 30rem;
-  //   // position: 50% center;
-  // }
 
   // Hamburger Open Styles
   &.open {
@@ -39,7 +33,7 @@
   #navbar {
     overflow: hidden;
     background-color: transparent;
-    z-index: 10;
+    z-index: 1;
 
   &.sticky {
     background-color: linear-gradient($secondary-color, transparent);
@@ -49,15 +43,10 @@
     top: 0;
     width: 100%;
   }
+
+  
 }
   
-//   &__logo {
-
-//     img {
-
-//     }
-//   }
-
   &__toggle { // Mobile Menu
 
     > span {

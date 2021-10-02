@@ -63,7 +63,7 @@ h2 {
 
 p {
   font-family: $text-font;
-  line-height: 1.15;
+  // line-height: 1.2;
   // margin-bottom: 3rem;
   font-size: $font-s;
 
@@ -187,7 +187,6 @@ button,
   color: $purple;
   font-family: $headers-font;
   font-weight: 900;
-  // font-size: $font-m;
   overflow: hidden;
   margin: 1rem 0 1rem 0;
   box-shadow: 4px 5px $grey-1;
@@ -196,19 +195,40 @@ button,
   &:hover {
     opacity: 0.75;
   }
+  
+  @media only screen and (max-width: 39em) {            color: $grey-1;
+    font-size: 18px;  
+  }
 }
 
 // Visibility
 .hide-for-mobile {
-  // hide for tablet and mobile
-  @include breakpoint-down(medium) {
+  // hide for mobile and tablet
+  @include breakpoint-down(small) {
+    display: none; 
+  }
+}
+
+.hide-for-tablet {
+  // hide for tablet viewport widths
+  @include breakpoint-up(medium) {
     display: none; 
   }
 }
 
 .hide-for-desktop {
-  // hide for desktop viewport widths
+  // hide for tablet viewport widths
   @include breakpoint-up(large) {
     display: none; 
   }
 }
+
+.hide-for-large-desktop {
+  // hide for desktop viewport widths
+  @include breakpoint-up(xlarge) {
+    display: none; 
+  }
+}
+
+
+

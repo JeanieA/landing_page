@@ -14,17 +14,20 @@
 
   &__image { 
     background-image: url('/images/sunglasses.jpg');
-    background-size: 110%;
     background-repeat: no-repeat;
-    background-position: center;
-    min-height: 35rem; 
+    
+    @media only screen and (max-width: 39em) {            color: $grey-1;
+      background-size: 100%;
+      background-position: top;
+      min-height: 20rem; 
 
-    // @include breakpoint-up(medium){
-     
-    // }
+      p {
+        padding: 0 2rem 0 2rem;
+      }
+    }
 
-    @include breakpoint-up(medium){
-      
+    @include breakpoint-up(medium){ 
+      background-size: cover;
       background-position: center 13%;
       flex: 2;
       order: 2;
@@ -42,9 +45,8 @@
   &__text {
     text-align: start;
     color: $grey-5;
-
-    @include breakpoint-up(medium){
-      
+    
+    @include breakpoint-up(medium){      
       padding: 3rem;
       // flex: 2;
       // order: 3;
