@@ -598,7 +598,7 @@ button:hover,
 }
 
 .support {
-  padding: .8rem 1.5rem;
+  padding: 2.8rem 1.5rem 2.5rem;
   color: #f5f5f4;
 }
 
@@ -616,6 +616,20 @@ button:hover,
     -ms-grid-columns: (minmax(80px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     grid-gap: .8rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .grid {
+    -ms-grid-columns: (minmax(90px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  }
+}
+
+@media (min-width: 64em) {
+  .grid {
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 }
 
@@ -642,7 +656,7 @@ button:hover,
 .footer {
   color: #212222;
   font-family: "Poiret One", cursive;
-  padding: 2.25rem 1.5rem;
+  padding: 4.25rem 1.5rem 1rem;
 }
 
 @media only screen and (max-width: 39em) {
