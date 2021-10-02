@@ -11,7 +11,6 @@
 
 .hero {
 
-
   &__image {
     position: relative;
     object-fit: contain;
@@ -36,25 +35,24 @@
   
   &__text {
     text-align: center;
-    color: $grey-5;
-
+    
     @media only screen and (max-width: 39em) {      
       margin-top: 5rem;
       color: $grey-1;
-
+      
       h1 {
         padding: 0 2.8rem;
       }
       p {
-
+        
         padding: 0 2rem 0 2rem;
       }
     }
-  
+    
     @include breakpoint-up(medium) {
       margin-top: 8rem;
       color: $grey-1;
-
+      
       h1 {
         font-size: 46px;
       }
@@ -66,11 +64,11 @@
         font-size: 18px;
       }
     }
-
+    
     @include breakpoint-up(large) {
       margin-top: 7rem;
-      color: $grey-4;
-
+      color: white;
+      
       h1 {
         font-size: 50px;
       }
@@ -85,8 +83,8 @@
     
     @include breakpoint-up(xlarge) {
       margin-top: 5rem;
-      // padding: 0 20rem 0 20rem;
-
+      color: white;
+      
       h1 {
         font-size: 65px;
       }
