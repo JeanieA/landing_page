@@ -61,6 +61,17 @@ h2 {
   }
 }
 
+// h3 {
+//   font-size: $font-m;
+//   // margin-top: 3rem;
+//   // margin-bottom: 1.5625rem;
+
+//   @include breakpoint-up(large) {
+//     font-size: $font-m;
+//     margin-bottom: 2.25rem;
+//   }
+// }
+
 p {
   font-family: $text-font;
   // line-height: 1.2;

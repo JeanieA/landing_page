@@ -1,24 +1,31 @@
+
 .footer { 
-  // background-color: $grey-1;
   color: $grey-1;
   font-family: $navigation-font; 
-  padding: 2.5rem; 
-  text-align: center;
-  position: relative;
-
+  padding: 2.25rem 1.5rem; 
+  // text-align: center;
+  // position: relative;
   
-    @include breakpoint-up(large) {
-        display: flex;
-        flex-direction: row;
-    //   display: grid;
-    //   grid-template-columns: repeat(3, 1fr) 2fr;
-    //   grid-template-rows: repeat(2, 1fr);
-    //   grid-template-areas: 
-    //     'logo'
-    //     'social links copyright';
-    // //   gap: 1rem;
-    //   justify-items: start;
+  
+  .container {
+    @media only screen and (max-width: 39em) {
+      flex-direction: column;
+      align-items: center;
     }
+  }
+  
+    // @include breakpoint-up(large) {
+    //     display: flex;
+    //     flex-direction: row;
+    // //   display: grid;
+    // //   grid-template-columns: repeat(3, 1fr) 2fr;
+    // //   grid-template-rows: repeat(2, 1fr);
+    // //   grid-template-areas: 
+    // //     'logo'
+    // //     'social links copyright';
+    // // //   gap: 1rem;
+    // //   justify-items: start;
+    // }
 
     a {
         color: $grey-1;
@@ -26,7 +33,9 @@
 
     &__logo { 
         margin-bottom: 1.875rem;
-        display: inline-block;
+        font-size: $font-s;
+        // font-family: $navigation-font;
+
 
         // @include breakpoint-up(large){
         
@@ -34,17 +43,18 @@
     }
 
     &__social { 
-        margin-bottom: 1.875rem;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.2rem;
+        line-height: 1.25rem;
+        gap: 1.6rem;
 
         // @include breakpoint-up(large){
         
         // }
+
         i {
           color: $grey-1;
-        }
-        
-        a {
-          display: inline-block;
         }
 
         a:not(:last-child) {
@@ -54,10 +64,18 @@
 
     &__links { 
         display: flex;
-        flex-direction: column;
-        margin-bottom: 1.875rem;
-        align-items: center;
-        line-height: 2.25rem;
+        flex-direction: row;
+        margin-bottom: .4rem;
+        line-height: 1.25rem;
+        gap: 1.875rem;
+        
+        // @media only screen and (max-width: 39em) {
+        //   a {
+            
+        //     align-items: start;
+        //     justify-content: space-between;
+        //   }
+        // }
 
         @include breakpoint-up(medium){
           display: flex;
@@ -72,6 +90,11 @@
 
     &__copyright {
         font-family: $headers-font; 
+        color: $grey-2;
+
+        @media only screen and (max-width: 39em) {
+          font-size: 8px;
+        }
 
         // @include breakpoint-up(large){
         

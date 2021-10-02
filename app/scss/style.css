@@ -642,20 +642,18 @@ button:hover,
 .footer {
   color: #212222;
   font-family: "Poiret One", cursive;
-  padding: 2.5rem;
-  text-align: center;
-  position: relative;
+  padding: 2.25rem 1.5rem;
 }
 
-@media (min-width: 64em) {
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
+@media only screen and (max-width: 39em) {
+  .footer .container {
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -665,19 +663,24 @@ button:hover,
 
 .footer__logo {
   margin-bottom: 1.875rem;
-  display: inline-block;
+  font-size: 0.875rem;
 }
 
 .footer__social {
-  margin-bottom: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 1.2rem;
+  line-height: 1.25rem;
+  gap: 1.6rem;
 }
 
 .footer__social i {
   color: #212222;
-}
-
-.footer__social a {
-  display: inline-block;
 }
 
 .footer__social a:not(:last-child) {
@@ -688,15 +691,13 @@ button:hover,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 1.875rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 2.25rem;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: .4rem;
+  line-height: 1.25rem;
+  gap: 1.875rem;
 }
 
 @media (min-width: 40em) {
@@ -714,5 +715,12 @@ button:hover,
 
 .footer__copyright {
   font-family: "DM Serif Display", serif;
+  color: #78716c;
+}
+
+@media only screen and (max-width: 39em) {
+  .footer__copyright {
+    font-size: 8px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
