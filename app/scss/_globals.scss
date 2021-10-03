@@ -183,27 +183,35 @@ button,
 
 // Visibility
 .hide-for-mobile {
-  // hide for mobile and tablet
-  @include breakpoint-down(small) {
+  // hide for mobile viewpport widths
+  @include breakpoint-down(xsmall) {
     display: none; 
   }
 }
 
 .hide-for-tablet {
+  // hide for mobile viewpport widths
+  @include breakpoint-down(small) {
+    display: none; 
+  }
+}
+
+
+.hide-for-desktop {
   // hide for tablet viewport widths
   @include breakpoint-up(medium) {
     display: none; 
   }
 }
 
-.hide-for-desktop {
+.hide-for-large-desktop {
   // hide for tablet viewport widths
   @include breakpoint-up(large) {
     display: none; 
   }
 }
 
-.hide-for-large-desktop {
+.hide-for-xlarge-desktop {
   // hide for desktop viewport widths
   @include breakpoint-up(xlarge) {
     display: none; 

@@ -4,9 +4,9 @@
   max-height: 100%;
   padding-right: 1rem;
 
-  @include breakpoint-up(medium){
-    padding-right: 2.8rem;
-  }
+  // @include breakpoint-up(xsmall){
+  //   padding-right: 2.8rem;
+  // }
 }
 
 .hero {
@@ -16,21 +16,27 @@
     object-fit: contain;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    // background-image: url('/images/burn2.png');
+   
+    // @include breakpoint-up(small){
+    //   background-image: url('/images/burn2.png');
+    //   // min-height: 35rem;
+    // }
+
     // @include breakpoint-up(medium){
     //   background-image: url('/images/burn2.png');
-    //   min-height: 35rem;
+    //   // min-height: 35rem;
     // }
     
-    @include breakpoint-up(large){
-      background-image: url('/images/burn2.png');
-      min-height: 50rem;
-    }
+    // @include breakpoint-up(large){
+    //   background-image: url('/images/burn2.png');
+    //   min-height: 50rem;
+    // }
     
-    @include breakpoint-up(xlarge){
-      background-image: url('/images/burn2.png');
-      min-height: 74rem;
-    }
+    // @include breakpoint-up(xlarge){
+    //   background-image: url('/images/burn2.png');
+    //   min-height: 74rem;
+    // }
   }
   
   &__text {
@@ -48,10 +54,26 @@
         padding: 0 2rem 0 2rem;
       }
     }
+
+    @include breakpoint-up(small) {
+      margin-top: 8rem;
+      color: white;
+      
+      h1 {
+        font-size: 46px;
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 2rem;
+      }
+      button {
+        font-size: 18px;
+      }
+    }
     
     @include breakpoint-up(medium) {
       margin-top: 8rem;
-      color: $grey-1;
+      color: white;
       
       h1 {
         font-size: 46px;
