@@ -98,13 +98,20 @@
 //   }
 // }
 
+// #btnHamburger {
+//   span {
+//     color: antiquewhite;
+// }
+// }
+
 .header {
   position: relative;
   z-index: 1;  
+  
 
   // Hamburger Open Styles
   &.open {
-
+   
     .header__toggle {
       > span:first-child {
         transform: rotate(45deg);
@@ -127,7 +134,8 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: linear-gradient($darkBlue, transparent);
+    background-image: linear-gradient($secondary-color, transparent);
+    // background-image: linear-gradient($darkBlue, transparent);
   }
 
   nav {
@@ -135,6 +143,7 @@
     background-color: transparent;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
+    
   }
 
   &__logo {
@@ -147,12 +156,11 @@
   }
 
   &__toggle { // Mobile Menu Toggle
-
+    
     > span {
       display: block;
       width: 26px;
       height: 2px;
-      background-color: $darkBlue;
       transition: all 300ms ease-in-out;
       transform-origin: 3px 1px;
 
@@ -167,16 +175,17 @@
     width: calc(100% - 3rem);
     left: 50%;
     transform: translateX(-50%);
-    background: $white;
+    background: white;
     margin-top: 1.5rem;
     padding: 1.625rem;
     border-radius: 5px;
 
     a {
       display: block;
-      padding: 0.625rem;
-      color: $darkBlue;
+      padding: 1.625rem;
+      color:$grey-1;
       text-align: center;
+      font-size: $font-lg;
     }
   }
 
@@ -186,7 +195,7 @@
       font-family: $navigation-font;
       position: relative;
       font-size: $font-med;
-      color: $grey-5;
+      color: $primary-color;
       transition: color 300ms ease-in-out;
 
       &:not(:last-child){
@@ -206,7 +215,7 @@
         transition: opacity 300ms ease-in-out;
       }
       &:hover {
-        color: $primary-color;
+        color: $secondary-color;
 
         &::before {
           opacity: 1;

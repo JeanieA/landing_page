@@ -257,7 +257,7 @@ h2,
 h3 {
   font-weight: 300;
   line-height: 1.15;
-  margin-top: 0px;
+  // margin-top: 0px;
   font-family: $headers-font;
 }
 
@@ -350,14 +350,23 @@ a:hover {
   &-jc-sb {
     justify-content: space-between;
   }
-
+  
   &-jc-c {
     justify-content: center;
   }
-
+  
   &-ai-c {
     align-items: center;
   }
+
+  &-fd-r {
+    flex-direction: row;
+  }
+
+  &-fd-c {
+    flex-direction: column;
+  }
+
 }
 
 // Buttons
@@ -370,7 +379,7 @@ button,
   border: 0;
   border-radius: 10px;
   cursor: pointer;
-  color: $white;
+  color: white;
   font-weight: 400;
   font-size: $font-med;
   font-family: $headers-font;

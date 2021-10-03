@@ -1,41 +1,41 @@
-// .support {
-//   padding: 2.8rem 1.5rem 2.5rem;
-//   color: $grey-5;
-// }
+.support {
+  padding: 2.8rem 1.5rem 2.5rem;
+  color: $grey-5;
+}
 
-// .grid {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-//   grid-gap: 5rem;
-//   justify-items: center;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-gap: 5rem;
+  justify-items: center;
 
-//   @media only screen and (max-width: 39em) {
-//     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-//     grid-gap: .8rem;
-//   }
+  @media only screen and (max-width: 39em) {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-gap: .8rem;
+  }
 
-//   @include breakpoint-up(medium){
-//     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));    
-//   }
+  @include breakpoint-up(medium){
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));    
+  }
 
-//   @include breakpoint-up(large){
-//     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));    
-//   }
-// }
+  @include breakpoint-up(large){
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));    
+  }
+}
 
-// .grid > div {
-//   // background: black;
-//   // padding: .7rem;
-//   display: grid;
-// }
+.grid > div {
+  // background: black;
+  // padding: .7rem;
+  display: grid;
+}
 
-// .grid > div::before,
-// .grid > div > img {
-//   grid-area: 1 / 1 / 2 / 2;
-//   content: "";
-//   // padding-bottom: 100%;
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: contain;
-// }
+.grid > div::before,
+.grid > div > img {
+  grid-area: 1 / 1 / 2 / 2;
+  content: "";
+  // padding-bottom: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

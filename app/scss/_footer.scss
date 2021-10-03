@@ -87,7 +87,6 @@
 
 .footer {
   // background-color: $darkBlue;
-  color: $white;
   padding: 2.5rem;
   text-align: center;
 
@@ -105,7 +104,7 @@
   }
 
   a {
-    color: $white;
+    color:$grey-1;
   }
 
   &__logo {
@@ -121,6 +120,7 @@
   }
 
   &__social {
+    
     @include breakpoint-down(medium) {
       margin-bottom: 1.875rem;
     }
@@ -139,7 +139,7 @@
       }
 
       &:hover svg path {
-        fill: $limeGreen;
+        fill: $primary-color;
       }
     }
 
@@ -180,7 +180,7 @@
       transition: color 150ms ease-in-out;
 
       &:hover {
-        color: $limeGreen;
+        color: $primary-color;
       }
     }
   }
@@ -201,7 +201,7 @@
 
   &__copyright {
     font-size: 0.8125rem;
-    color: $grayishBlue;
+    color: $grey-1;
 
     @include breakpoint-up(large) {
       grid-area: copyright;
