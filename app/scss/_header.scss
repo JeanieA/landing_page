@@ -98,15 +98,15 @@
 //   }
 // }
 
-// #btnHamburger {
-//   span {
-//     color: antiquewhite;
-// }
-// }
+#btnHamburger {
+  span {
+    color: antiquewhite;
+}
+}
 
 .header {
   position: relative;
-  z-index: 1;  
+ 
   
 
   // Hamburger Open Styles
@@ -143,6 +143,7 @@
     background-color: transparent;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;  
+    z-index: 1; 
   }
 
   &__logo {
