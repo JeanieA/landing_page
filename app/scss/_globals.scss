@@ -62,12 +62,12 @@ h2 {
 }
 
 // h3 {
-//   font-size: $font-m;
+//   font-size: $font-s;
 //   // margin-top: 3rem;
 //   // margin-bottom: 1.5625rem;
 
 //   @include breakpoint-up(large) {
-//     font-size: $font-m;
+//     font-size: $font-s;
 //     margin-bottom: 2.25rem;
 //   }
 // }
@@ -130,37 +130,6 @@ a:hover {
   &--pl {
     padding-left: 1.5rem;
   }
-
-  // &--mall {
-  //   margin-top: 2.25rem;
-  //   margin-bottom: 2.25rem; 
-  //   margin-right: 1.5rem;
-  //   margin-left: 1.5rem; 
-  // }
-
-  // &--my {
-  //   margin-top: 2.25rem;
-  //   margin-bottom: 2.25rem; 
-  // }
-
-  // &--mx {
-  //   margin-right: 1.5rem;
-  //   margin-left: 1.5rem; 
-  // }
-
-  // &--mt {
-  //   margin-top: 2.25rem; 
-  // }
-  // &--mr {
-  //   margin-right: 1.5rem; 
-  // }
-  // &--mb {
-  //   margin-bottom: 2.25rem;  
-  // }
-  // &--ml {
-  //   margin-left: 1.5rem;
-  // }
-
 }
 
 //Flexbox
@@ -240,6 +209,3 @@ button,
     display: none; 
   }
 }
-
-
-

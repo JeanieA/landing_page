@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  
+
   // Hamburger Open Styles
   &.open {
 
@@ -84,7 +84,7 @@
     a {
       font-weight: bolder;
       font-size: $font-m;
-      color: $grey-2;
+      color: white;
       transition: color 200ms ease-in-out;
 
       &:not(:last-child){
