@@ -1,27 +1,249 @@
+// html {
+//   font-size: 100%;
+//   box-sizing: border-box;
+// }
+
+// *, 
+// *::before, 
+// *::after {
+//   box-sizing: inherit;
+// }
+
+// body {
+//   margin: 0;
+//   padding: 0; 
+//   font-family: $navigation-font;
+//   font-size: $font-s;
+//   font-weight: 300;
+//   // color: $grey-2;
+//   line-height: 1.3;
+//   // background-color:$grey-1;
+//   background: linear-gradient( rgba(0,0,0,0), $primary-color 30%, 90%, rgba(0,0,0,0));
+
+//   @include breakpoint-up(large){
+//     font-size: $font-m;
+//   }
+
+//   &.noscroll {
+//     overflow: hidden;
+//   }
+// }
+
+// // Text
+// h1,
+// h2,
+// h3 {
+//   font-family: $headers-font;
+//   margin-top: 0px;
+//   // color: $grey-1;
+//   line-height: 1.15;
+//   font-weight: 400;
+// }
+
+// h1 { 
+//   font-size: $font-l;
+//   padding-top: 4rem;
+//   margin-bottom: 1rem;
+
+//   @include breakpoint-up(large) {
+//     font-size: $font-xl;
+//   }
+// }
+
+// h2 {
+//   font-size: $font-l;
+//   margin-top: 3rem;
+//   margin-bottom: 1.5625rem;
+
+//   @include breakpoint-up(large) {
+//     font-size: $font-xl;
+//     margin-bottom: 2.25rem;
+//   }
+// }
+
+// // h3 {
+// //   font-size: $font-s;
+// //   // margin-top: 3rem;
+// //   // margin-bottom: 1.5625rem;
+
+// //   @include breakpoint-up(large) {
+// //     font-size: $font-s;
+// //     margin-bottom: 2.25rem;
+// //   }
+// // }
+
+// p {
+//   font-family: $text-font;
+//   // line-height: 1.2;
+//   // margin-bottom: 3rem;
+//   font-size: $font-s;
+
+//   @include breakpoint-up(large) {
+//     font-size: $font-m;
+//     margin-bottom: 2.25rem;
+//   }
+// }
+
+// a, 
+// a:visited, 
+// a:hover {
+//   text-decoration: none;
+// }
+
+// // Spacing 
+// .container {
+
+//   @include breakpoint-up(large){
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   max-width: 100rem;
+//   // margin: 0 auto;
+
+//   &--pall {
+//     padding-top: 2.25rem;
+//     padding-bottom: 2.25rem; 
+//     padding-right: 1.5rem;
+//     padding-left: 1.5rem; 
+//   }
+
+//   &--py {
+//     padding-top: 2.25rem;
+//     padding-bottom: 2.25rem; 
+//   }
+
+//   &--px {
+//     padding-right: 1.5rem;
+//     padding-left: 1.5rem; 
+//   }
+
+//   &--pt {
+//     padding-top: 2.25rem; 
+//   }
+//   &--pr {
+//     padding-right: 1.5rem; 
+//   }
+//   &--pb {
+//     padding-bottom: 2.25rem;  
+//   }
+//   &--pl {
+//     padding-left: 1.5rem;
+//   }
+// }
+
+// //Flexbox
+// .flex {
+//   display: flex;
+
+//   &-jc-sb {
+//     justify-content: space-between;
+//   }
+
+//   &-jc-c {
+//     justify-content: center;
+//   }
+
+//   &-ai-fs {
+//     align-items: flex-start;
+//   }
+
+//   &-ai-c {
+//     align-items: center;
+//   }
+// }
+
+// // Buttons 
+// button, 
+// .button {
+//   position: relative;
+//   display: inline-block;
+//   padding: 1.125rem 2.5rem;
+//   // background-image: linear-gradient(to right, $purple, rgba(123, 48, 134, 0.5));
+//   background-color: white;
+//   border: 0;
+//   border-radius: 37px;
+//   cursor: pointer;
+//   color: $grey-1;
+//   font-family: $headers-font;
+//   font-weight: 900;
+//   overflow: hidden;
+//   margin: 1rem 0 1rem 0;
+//   box-shadow: 4px 5px $grey-1;
+//   transition: opacity 300ms ease-in-out;
+  
+//   &:hover {
+//     opacity: 0.75;
+//   }
+  
+//   @media only screen and (max-width: 39em) {            color: $grey-1;
+//     font-size: 18px;  
+//   }
+// }
+
+// // Visibility
+// .hide-for-mobile {
+//   // hide for mobile viewpport widths
+//   @include breakpoint-down(xsmall) {
+//     display: none; 
+//   }
+// }
+
+// .hide-for-tablet {
+//   // hide for mobile viewpport widths
+//   @include breakpoint-up(small) {
+//     display: none; 
+//   }
+// }
+
+
+// .hide-for-desktop {
+//   // hide for tablet viewport widths
+//   @include breakpoint-up(medium) {
+//     display: none; 
+//   }
+// }
+
+// .hide-for-large-desktop {
+//   // hide for tablet viewport widths
+//   @include breakpoint-up(large) {
+//     display: none; 
+//   }
+// }
+
+// .hide-for-xlarge-desktop {
+//   // hide for desktop viewport widths
+//   @include breakpoint-up(xlarge) {
+//     display: none; 
+//   }
+// }
+
+
+
 html {
   font-size: 100%;
   box-sizing: border-box;
 }
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
-  padding: 0; 
-  font-family: $navigation-font;
-  font-size: $font-s;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+  font-size: $font-sm;
   font-weight: 300;
-  // color: $grey-2;
+  color: $grey-5;
   line-height: 1.3;
-  // background-color:$grey-1;
-  background: linear-gradient( rgba(0,0,0,0), $primary-color 30%, 90%, rgba(0,0,0,0));
+  overflow-x: hidden;
+  background: linear-gradient( rgba(0,0,0,0), $primary-color 50%, 88%, rgba(0,0,0,0));
 
-  @include breakpoint-up(large){
-    font-size: $font-m;
+  @include breakpoint-up(large) {
+    font-size: $font-med;
   }
 
   &.noscroll {
@@ -33,106 +255,95 @@ body {
 h1,
 h2,
 h3 {
-  font-family: $headers-font;
-  margin-top: 0px;
-  // color: $grey-1;
+  font-weight: 300;
   line-height: 1.15;
-  font-weight: 400;
+  margin-top: 0px;
+  font-family: $headers-font;
 }
 
-h1 { 
-  font-size: $font-l;
-  padding-top: 4rem;
+h1 {
+  font-size: 2.31rem;
   margin-bottom: 1rem;
 
   @include breakpoint-up(large) {
-    font-size: $font-xl;
+    font-size: $font-xlg;
   }
 }
 
 h2 {
-  font-size: $font-l;
-  margin-top: 3rem;
+  font-size: 1.875rem;
   margin-bottom: 1.5625rem;
 
   @include breakpoint-up(large) {
-    font-size: $font-xl;
+    font-size: 2.25rem;
     margin-bottom: 2.25rem;
   }
 }
-
-// h3 {
-//   font-size: $font-s;
-//   // margin-top: 3rem;
-//   // margin-bottom: 1.5625rem;
-
-//   @include breakpoint-up(large) {
-//     font-size: $font-s;
-//     margin-bottom: 2.25rem;
-//   }
-// }
 
 p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
   font-family: $text-font;
-  // line-height: 1.2;
-  // margin-bottom: 3rem;
-  font-size: $font-s;
-
-  @include breakpoint-up(large) {
-    font-size: $font-m;
-    margin-bottom: 2.25rem;
-  }
 }
 
-a, 
-a:visited, 
+a,
+a:visited,
 a:hover {
   text-decoration: none;
 }
 
-// Spacing 
+// Spacing
 .container {
-
-  @include breakpoint-up(large){
-    display: flex;
-    align-items: center;
-  }
-
-  max-width: 100rem;
-  // margin: 0 auto;
+  max-width: 69.375rem;
+  margin: 0 auto;
 
   &--pall {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem; 
+    padding-top: 4.375rem;
     padding-right: 1.5rem;
-    padding-left: 1.5rem; 
-  }
+    padding-bottom: 4.375rem;
+    padding-left: 1.5rem;
 
+    @include breakpoint-up(large) {
+      padding-top: 9rem;
+      padding-bottom: 6rem;
+    }
+  }
   &--py {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem; 
-  }
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
 
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
   &--px {
     padding-right: 1.5rem;
-    padding-left: 1.5rem; 
+    padding-left: 1.5rem;
   }
-
   &--pt {
-    padding-top: 2.25rem; 
+    padding-top: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+    }
   }
   &--pr {
-    padding-right: 1.5rem; 
+    padding-right: 1.5rem;
   }
   &--pb {
-    padding-bottom: 2.25rem;  
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-bottom: 6rem;
+    }
   }
   &--pl {
     padding-left: 1.5rem;
   }
 }
 
-//Flexbox
+// Flexbox
 .flex {
   display: flex;
 
@@ -144,76 +355,54 @@ a:hover {
     justify-content: center;
   }
 
-  &-ai-fs {
-    align-items: flex-start;
-  }
-
   &-ai-c {
     align-items: center;
   }
 }
 
-// Buttons 
-button, 
-.button {
+// Buttons
+button,
+.button {
   position: relative;
   display: inline-block;
-  padding: 1.125rem 2.5rem;
-  // background-image: linear-gradient(to right, $purple, rgba(123, 48, 134, 0.5));
-  background-color: white;
+  padding: 0.875rem 2.1875rem;
+  background-image: linear-gradient(to right, $primary-color, $secondary-color);
   border: 0;
-  border-radius: 37px;
+  border-radius: 10px;
   cursor: pointer;
-  color: $grey-1;
+  color: $white;
+  font-weight: 400;
+  font-size: $font-med;
   font-family: $headers-font;
-  font-weight: 900;
-  overflow: hidden;
-  margin: 1rem 0 1rem 0;
-  box-shadow: 4px 5px $grey-1;
   transition: opacity 300ms ease-in-out;
-  
-  &:hover {
-    opacity: 0.75;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
   }
-  
-  @media only screen and (max-width: 39em) {            color: $grey-1;
-    font-size: 18px;  
+
+  &:hover::before {
+    opacity: 1;
   }
 }
 
 // Visibility
 .hide-for-mobile {
-  // hide for mobile viewpport widths
-  @include breakpoint-down(xsmall) {
-    display: none; 
+  @include breakpoint-down(medium) {
+    display: none;
   }
 }
-
-.hide-for-tablet {
-  // hide for mobile viewpport widths
-  @include breakpoint-down(small) {
-    display: none; 
-  }
-}
-
 
 .hide-for-desktop {
-  // hide for tablet viewport widths
-  @include breakpoint-up(medium) {
-    display: none; 
-  }
-}
-
-.hide-for-large-desktop {
-  // hide for tablet viewport widths
   @include breakpoint-up(large) {
-    display: none; 
-  }
-}
-
-.hide-for-xlarge-desktop {
-  // hide for desktop viewport widths
-  @include breakpoint-up(xlarge) {
-    display: none; 
+    display: none;
   }
 }

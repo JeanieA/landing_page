@@ -1,0 +1,157 @@
+.article { 
+  position: relative;
+  // z-index: 5;
+  width: calc(100% - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  // padding-bottom: 1.625rem;
+  border-radius: 15px;
+  background-color: $grey-1;  
+  // color: black;
+  overflow: hidden;
+
+  &__image { 
+    background-image: url('/images/sunglasses.jpg');
+    background-repeat: no-repeat;
+    
+    @media only screen and (max-width: 39em) {            
+      background-size: 100%;
+      background-position: top;
+      min-height: 20rem; 
+
+      p {
+        padding: 0 2rem 0 2rem;
+      }
+    }
+
+    @include breakpoint-up(medium){ 
+      background-size: cover;
+      background-position: center 13%;
+      flex: 2;
+      order: 3;
+      height: 35rem;
+    }
+
+    // @include breakpoint-up(large){
+    //   background-position: center 5%;
+    //   flex: 2;
+    //   order: 2;
+    //   height: 35rem;
+    // }
+  }
+
+  &__text {
+    text-align: start;
+    color: $grey-5;
+    
+    @include breakpoint-up(medium){      
+      padding: 3rem;
+      p {
+        font-size: 18px;
+      }
+      button {
+        font-size: 18px;
+      }
+    }
+
+    // @include breakpoint-up(large){
+    //   font-size: $font-med;
+    //   flex: 2;
+    //   order: 3;
+    //   button {
+    //     font-size: $font-med;
+    //   }
+    // }
+
+    // @include breakpoint-up(xlarge){
+    //   font-size: $font-xlg;
+    //   flex: 2;
+    //   order: 3;
+    //   button {
+    //     font-size: $font-med;
+    //   }
+    // }
+  }
+}
+
+// .articles {
+// 	// background-color: $veryLightGray;
+// }
+
+// .article {
+//     position: relative;
+// 	&__grid {
+// 		display: grid;
+// 		grid-template-columns: 1fr;
+// 		// gap: 1.875rem;
+
+// 		// @include breakpoint-up(medium) {
+// 		// 	grid-template-columns: repeat(2, 1fr);
+// 		// }
+
+// 		// @include breakpoint-up(large) {
+// 		// 	grid-template-columns: repeat(4, 1fr);
+// 		// }
+// 	}
+
+// 	&__item {
+// 		border-radius: 0.7125rem;
+// 		overflow: hidden;
+// 		background-color: $grey-1;
+// 		box-shadow: 0px 3px 12px rgba(0, 0, 0, .7);
+// 		transition: all 150ms ease-in-out;
+
+// 		&:hover {
+// 			transform: scale(1.02);
+// 		}
+// 	}
+
+// 	&__image {   
+// 		height: 20rem;
+// 		background-size: 100%;
+// 		background-repeat: no-repeat;
+// 		background-position: top;
+
+//         @include breakpoint-up(large){
+//             background-size: cover;
+//             background-position: center 5%;
+//             flex: 2;
+//             order: 2;
+//             height: 35rem;
+//         }
+// 	}
+
+// 	&__text {
+// 		padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+// 		color: $grey-4;
+
+// 		@include breakpoint-up(medium) {
+// 			padding: 1.875rem 1.5625rem;
+// 		}
+// 	}
+
+// 	&__author {
+// 		font-size: 0.625rem;
+// 		margin-bottom: 0.75rem;
+// 	}
+
+// 	&__title {
+// 		font-size: 1.0625rem;
+// 		line-height: 1.2;
+// 		color: $darkBlue;
+// 		margin-bottom: 0.5rem;
+// 	}
+
+// 	&__description {
+// 		font-size: 0.8125rem;
+//         font-family: $text-font;
+
+//         @include breakpoint-up(medium) {
+// 			padding: 1.875rem 1.5625rem;
+//             font-size: $font-med;
+           
+// 		}
+// 	}
+// }
