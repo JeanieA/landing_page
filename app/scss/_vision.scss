@@ -46,18 +46,20 @@
 	transition: opacity .1s .6s, transform .4s .6s;
 }
 .content blockquote {
-	position: relative;
-	bottom: 5%;
+	position: absolute;
+	bottom: 18%;
 	left: 15%;
 	z-index: 1;
 	max-width: 45%;
 }
 blockquote p {
-	font-size: 4rem;
+	font-size: 3rem;
 	margin-bottom: 2rem;
 }
 blockquote span {
-	font-size: 1.4rem;
+    font-family: $headers-font;
+	font-size: 3.6rem;
+    color: $purple;
 }
 /* current slide
 ---------------------------------*/
