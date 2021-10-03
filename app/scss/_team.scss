@@ -76,31 +76,33 @@
   line-height: 20px;
 }
 
-.our_team .team_member .member_img .social_media{
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  background: rgba(0,0,0,0.65);
-  width: 95%;
-  height: 95%;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0);
-  transition: all 0.5s ease; 
-}
+// In case we add social media links to team members
 
-.our_team .team_member .member_img .social_media .item{
-  margin: 10px;
-  padding: 10px;
-}
+// .our_team .team_member .member_img .social_media{
+//   position: absolute;
+//   top: 5px;
+//   left: 5px;
+//   background: rgba(0,0,0,0.65);
+//   width: 95%;
+//   height: 95%;
+//   border-radius: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transform: scale(0);
+//   transition: all 0.5s ease; 
+// }
 
-.our_team .team_member .member_img .social_media .fab{
-  color: #8c7ae6;
-  font-size: 20px;
-}
+// .our_team .team_member .member_img .social_media .item{
+//   margin: 10px;
+//   padding: 10px;
+// }
 
-.our_team .team_member .member_img:hover .social_media{
-  transform: scale(1);
-}
+// .our_team .team_member .member_img .social_media .fab{
+//   color: #8c7ae6;
+//   font-size: 20px;
+// }
+
+// .our_team .team_member .member_img:hover .social_media{
+//   transform: scale(1);
+// }
