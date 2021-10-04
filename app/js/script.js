@@ -69,6 +69,8 @@ btnHamburger.addEventListener('click', function(){
   }  
 });
 
+// Slider JS
+
 (function() {
   
   var autoUpdate = false,

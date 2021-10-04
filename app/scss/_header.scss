@@ -28,7 +28,6 @@
     bottom: 0px;
     left: 0px;
     background-image: linear-gradient($secondary-color, transparent);
-    // background-image: linear-gradient($darkBlue, transparent);
   }
 
   nav {
@@ -104,13 +103,13 @@
 
       &::before {
         content: "";
-        // display: block;
-        // position: absolute;
-        // height: 5px;
-        // left: 0;
-        // right: 0;
-        // bottom: 5px;
-        // background: linear-gradient(to right, $primary-color, $secondary-color);
+        display: block;
+        position: absolute;
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: 5px;
+        background: linear-gradient(to right, $primary-color, $secondary-color);
         opacity: 0;
         transition: opacity 300ms ease-in-out;
       }

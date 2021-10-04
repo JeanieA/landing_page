@@ -124,10 +124,9 @@
 .hero {
   .container {
     
-    
     @include breakpoint-up(large){    
       display: flex;
-      align-items: flex-start;
+      align-items: center;
     }
   }
 
